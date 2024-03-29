@@ -16,9 +16,7 @@ Please follow the [Getting Started](../../README.md#getting-started) instruction
 
     Option 2. Generate models locally.  Ensure you have downloaded the checkpoint files (installation instructions in PyTorch section above) before running the command below.
 
-        chmod +x demo/sam/generate_models.sh
-
-        ./demo/sam/generate_models.sh --onnx l0 l1 l2 xl0 xl1
+        ./demo/sam/generate_models.ps1 -Onnx l0 l1 l2 xl0 xl1
 
 ### TensorRT-specific installation instructions
 
@@ -33,9 +31,7 @@ Please follow the [Getting Started](../../README.md#getting-started) instruction
     Ensure you have downloaded the ONNX models before running the script (installation instructions outlined in the ONNX section above).
     Engines will be saved to the `assets/export_models/sam/tensorrt` directory.
 
-        chmod +x demo/sam/generate_models.sh
-
-        ./demo/sam/generate_models.sh --tensorrt l0 l1 l2 xl0 xl1
+        ./demo/sam/generate_models.ps1 -TensorRT l0 l1 l2 xl0 xl1
 
 
 ## Usage
