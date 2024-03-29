@@ -64,8 +64,8 @@ function Get-SideLen {
     param($model_name)
 
     switch -regex ($model_name) {
-        'l0|l1|l2' { return "512" }
-        'xl0|xl1' { return "1024" }
+        '^(l0|l1|l2)$' { return "512" }
+        '^(xl0|xl1)$' { return "1024" }
     }
 }
 
